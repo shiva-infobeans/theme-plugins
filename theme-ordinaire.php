@@ -92,21 +92,21 @@ add_action( 'init', 'bootstrap_slider' );
 
 function bootstrap_slider() {
     $labels = array(
-        'name'               => array( 'Slider', 'post type general name'),
-        'singular_name'      => array( 'Slide', 'post type singular name'),
-        'menu_name'          => array( 'Slider', 'admin menu'),
-        'name_admin_bar'     => array( 'Slide', 'add new on admin bar'),
-        'add_new'            => array( 'Add New', 'Slide'),
-        'add_new_item'       => array( 'Name'),
-        'new_item'           => array( 'New Slide'),
-        'edit_item'          => array( 'Edit Slide'),
-        'view_item'          => array( 'View Slide'),
-        'all_items'          => array( 'All Slide'),
-        'featured_image'     => array( 'Featured Image', 'text_domain' ),
-        'search_items'       => array( 'Search Slide'),
-        'parent_item_colon'  => array( 'Parent Slide:'),
-        'not_found'          => array( 'No Slide found.'),
-        'not_found_in_trash' => array( 'No Slide found in Trash.'),
+        'name'               => _x( 'Slider', 'ordinaire'),
+        'singular_name'      => _x( 'Slide', 'ordinaire'),
+        'menu_name'          => _x( 'Slider', 'admin menu'),
+        'name_admin_bar'     => _x( 'Slide', 'add new on admin bar'),
+        'add_new'            => _x( 'Add New', 'Slide'),
+        'add_new_item'       => __( 'Name'),
+        'new_item'           => __( 'New Slide'),
+        'edit_item'          => __( 'Edit Slide'),
+        'view_item'          => __( 'View Slide'),
+        'all_items'          => __( 'All Slide'),
+        'featured_image'     => __( 'Featured Image', 'ordinaire' ),
+        'search_items'       => __( 'Search Slide'),
+        'parent_item_colon'  => __( 'Parent Slide:'),
+        'not_found'          => __( 'No Slide found.'),
+        'not_found_in_trash' => __( 'No Slide found in Trash.'),
         );
 
     $args = array(
