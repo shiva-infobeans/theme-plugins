@@ -13,7 +13,7 @@ add_action('init', 'portfolio_projects');
 //portfolio projects cpt
 function portfolio_projects() {
     register_post_type('projects', array(
-        'label' => ('Projects'),
+        'label' => __('Projects', 'ordinaire'),
         'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
         'show_ui' => true,
         'public'  => true,
@@ -25,7 +25,7 @@ function portfolio_projects() {
 //cpt for team page
 function team_members() {
     register_post_type('team', array(
-        'label' => ('Team'),
+        'label' => __('Team', 'ordinaire'),
         'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
         'show_ui' => true,
         'public'  => true,
@@ -38,7 +38,7 @@ add_action('init', 'team_members');
 //cpt for about us page tabs
 function about_you() {
     register_post_type('about', array(
-        'label' => ('About-Tabs'),
+        'label' => __('About-Tabs', 'ordinaire'),
         'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
         'show_ui' => true,
         'public'  => true,
@@ -52,7 +52,7 @@ add_action('init', 'about_you');
 //cpt for services page tabs
 function service_tabs() {
     register_post_type('servicestab', array(
-        'label' => ('Service-Tabs'),
+        'label' => __('Service-Tabs', 'ordinaire'),
         'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
         'show_ui' => true,
         'public'  => true,
@@ -64,7 +64,7 @@ add_action('init', 'service_tabs');
 function service_blocks() {
 
     register_post_type('services', array(
-        'label' => ('Services'),
+        'label' => __('Services', 'ordinaire'),
         'supports' => array( 'title', 'editor', 'thumbnail', 'revisions','custom-fields'),
         'show_ui' => true,
         'public'  => true,
@@ -76,7 +76,7 @@ add_action('init', 'service_blocks');
 function home_block() {
 
     register_post_type('homeblock', array(
-        'label' => ('Home-Parallex'),
+        'label' => __('Home-Parallex', 'ordinaire'),
         'supports' => array( 'title', 'editor', 'thumbnail', 'revisions'),
         'show_ui' => true,
         'show_in_menu'  => true,
@@ -112,7 +112,7 @@ function bootstrap_slider() {
     $args = array(
         'labels'             => $labels,
         'menu_icon'      => 'dashicons-star-half',
-        'description'        => ( 'Description.'),
+        'description'        => __( 'Description.', 'ordinaire'),
         'public'             => true,
         'publicly_queryable' => true,
         'show_ui'            => true,
